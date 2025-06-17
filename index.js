@@ -17,4 +17,6 @@ app.listen(process.env.PORT , () => {
     console.log(`app is running on ${port}`);
 })
 
-
+app.listen(process.env.PORT, (res, req) => {
+    console.log("connected to DB")
+})
